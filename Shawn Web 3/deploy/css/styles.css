@@ -28,7 +28,8 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #FCFCFC; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -324,9 +325,36 @@ ul {
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   padding: 0;
   margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; }
+
+h3 {
+  font-size: 2rem;
+  line-height: 2rem; }
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600; }
+
+p {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400; }
 
 /* =============
     Buttons
@@ -355,3 +383,60 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Heroes
+============= */
+#hero {
+  background-image: url("../img/Hero/getulio-moraes-0crScaMEJj4-unsplash.jpg");
+  background-position: 55% top;
+  background-repeat: no-repeat;
+  background-size: auto 140%;
+  height: 80vh; }
+  @media (min-width: 768px) {
+    #hero {
+      background-position: 70% top;
+      background-size: auto 140%; } }
+  @media (min-width: 1024px) {
+    #hero {
+      background-position: 0% top;
+      background-size: auto 150%;
+      height: 100vh;
+      width: 100vw; } }
+  #hero > div {
+    display: grid;
+    grid-template-areas: ". hero-content .";
+    grid-template-columns: 16px auto 16px; }
+    @media (min-width: 768px) {
+      #hero > div {
+        grid-template-columns: 300px auto 32px; } }
+    @media (min-width: 1024px) {
+      #hero > div {
+        grid-template-columns: auto 1024px auto; } }
+    #hero > div article {
+      grid-area: hero-content;
+      margin-top: 3.5rem; }
+      @media (min-width: 768px) {
+        #hero > div article {
+          margin-top: 6.5rem; } }
+      @media (min-width: 1024px) {
+        #hero > div article {
+          margin-top: 11rem; } }
+      #hero > div article h1 {
+        color: #FCFCFC;
+        font-size: 2.5rem;
+        line-height: 2.5rem; }
+        @media (min-width: 768px) {
+          #hero > div article h1 {
+            font-size: 3.5rem;
+            line-height: 3.5rem; } }
+        @media (min-width: 1024px) {
+          #hero > div article h1 {
+            width: 35rem; } }
+      #hero > div article h2 {
+        color: #FF5D00;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        margin-top: 10rem; }
+        @media (min-width: 768px) {
+          #hero > div article h2 {
+            margin-top: 7.5rem; } }

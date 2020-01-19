@@ -52,72 +52,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/FamousPlayers/Kaye.png": {
-		"ft": 32768,
-		"iS": 199646,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/Kaye.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/Kaye@2x.png": {
-		"ft": 32768,
-		"iS": 256226,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/Kaye@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/Kaye@3x.png": {
-		"ft": 32768,
-		"iS": 315362,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/Kaye@3x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/McKagan.png": {
-		"ft": 32768,
-		"iS": 512758,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/McKagan.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/McKagan@2x.png": {
-		"ft": 32768,
-		"iS": 653480,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/McKagan@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/McKagan@3x.png": {
-		"ft": 32768,
-		"iS": 734764,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/McKagan@3x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/deploy/img/FamousPlayers/Mendel.jpg": {
 		"ft": 16384,
 		"iS": 230522,
@@ -149,72 +83,6 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/Ramone.png": {
-		"ft": 32768,
-		"iS": 391496,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/Ramone.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/Ramone@2x.png": {
-		"ft": 32768,
-		"iS": 503990,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/Ramone@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/Ramone@3x.png": {
-		"ft": 32768,
-		"iS": 621399,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/Ramone@3x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/Simonon.png": {
-		"ft": 32768,
-		"iS": 420728,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/Simonon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/Simonon@2x.png": {
-		"ft": 32768,
-		"iS": 529790,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/Simonon@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/FamousPlayers/Simonon@3x.png": {
-		"ft": 32768,
-		"iS": 655313,
-		"oA": 0,
-		"oAP": "/deploy/img/FamousPlayers/Simonon@3x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/FirstPrecision/PrecisionHeadstock.png": {
@@ -513,8 +381,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/index.html",
-		"oF": 0
+		"oAP": "/deploy/index.html",
+		"oF": 2
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
@@ -657,6 +525,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sections/_hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -665,8 +546,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/dev/scss/styles.css",
-		"oF": 0,
+		"oAP": "/deploy/css/styles.css",
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		}

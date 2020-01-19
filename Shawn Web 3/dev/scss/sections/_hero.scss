@@ -1,0 +1,67 @@
+/* =============
+    Heroes
+============= */
+#hero {
+    background-image: url("../img/Hero/getulio-moraes-0crScaMEJj4-unsplash.jpg");
+    background-position: 55% top;
+    background-repeat: no-repeat;
+    background-size: auto 140%;
+    height: 80vh;
+    @include md {
+        background-position: 70% top;
+        background-size: auto 140%;
+    }
+    @include lg {
+        background-position: 0% top;
+        background-size: auto 150%;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    > div {
+        display: grid;
+        grid-template-areas: ". hero-content .";
+        grid-template-columns: 16px auto 16px;
+        @include md {
+            grid-template-columns: 300px auto 32px;
+        }
+        @include lg {
+            grid-template-columns: auto 1024px auto;
+        }
+
+        article {
+            grid-area: hero-content;
+            margin-top: rem-calc(56px);
+            @include md {
+                margin-top: rem-calc(104px);
+            }
+            @include lg {
+                margin-top: rem-calc(176px);
+            }
+
+
+            h1 {
+                color: $off-white;
+                font-size: rem-calc(40px);
+                line-height: rem-calc(40px);
+                @include md {
+                    font-size: rem-calc(56px);
+                    line-height: rem-calc(56px);
+                }
+                @include lg {
+                    width: rem-calc(560px);
+                }
+            }
+
+            h2 {
+                color: $orange;
+                font-size: rem-calc(40px);
+                line-height: rem-calc(40px);
+                margin-top: rem-calc(160px);
+                @include md {
+                    margin-top: rem-calc(120px);
+                }
+            }
+        }
+    }
+}
