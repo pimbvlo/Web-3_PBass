@@ -1,7 +1,6 @@
 /* =============
     firstPrecision
 ============= */
-
 #first {
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -33,13 +32,10 @@
                 grid-template-columns: repeat(1,1fr);
                 grid-template-areas: "first-article-h3" "first-article-p";
                 padding-left: 24px;
-
             }
             @include xl {
                 padding-left: 10%;
                 grid-template-columns: 600px;
-
-
             }
 
             h3 {
@@ -66,20 +62,14 @@
             @include md {
                 width: 90vw;
                 height: rem-calc(320px);
-
             }
             @include lg {
                 width: 100%;
                 height: rem-calc(240px);
-
             }
             @include xl {
                 height: rem-calc(300px);
-
-
             }
-
-
         }
     }
 }

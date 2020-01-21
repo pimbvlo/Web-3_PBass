@@ -1,23 +1,20 @@
 /* =============
     gallery
 ============= */
-
-#gallery{
+#gallery {
     display: grid;
     grid-template-areas: "gallery-content";
     grid-template-columns: repeat(1,1fr);
     @include lg {
         grid-template-columns: auto 1024px auto;
-        grid-template-areas:
-        ". gallery-content .";
-
+        grid-template-areas: ". gallery-content .";
     }
 
-    >div{
+    > div {
         grid-area: gallery-content;
-        article{
 
-            ul{
+        article {
+            ul {
                 display: grid;
                 grid-template-areas: "gallery-concert" "gallery-closeUp" "gallery-bass";
                 grid-template-columns: repeat(1,1fr);
@@ -26,23 +23,15 @@
                 @include md {
                     grid-template-columns: repeat(3,1fr);
                     grid-template-rows: 400px 296px;
-                    grid-template-areas:
-                    "gallery-bass gallery-bass gallery-closeUp"
-                    "gallery-concert gallery-concert gallery-concert";
-
+                    grid-template-areas: "gallery-bass gallery-bass gallery-closeUp" "gallery-concert gallery-concert gallery-concert";
                 }
                 @include lg {
                     grid-template-columns: repeat(3,1fr);
                     grid-template-rows: 296px 296px;
-                    grid-template-areas:
-                    "gallery-bass gallery-concert gallery-concert"
-                    "gallery-bass gallery-closeUp gallery-closeUp";
-
+                    grid-template-areas: "gallery-bass gallery-concert gallery-concert" "gallery-bass gallery-closeUp gallery-closeUp";
                 }
 
-
-
-                li:nth-child(1){
+                li:nth-child(1) {
                     background-image: url("../img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash.jpg");
                     background-position: center top;
                     background-repeat: no-repeat;
@@ -52,64 +41,47 @@
                     @include md {
                         background-position: center 30%;
                         background-size: cover;
-
                     }
                     // @include xl {
                     //     border-radius: 45% 55% 85% 15% / 33% 77% 23% 67% ;
                     // }
-
-
                 }
 
-                li:nth-child(2){
+                li:nth-child(2) {
                     background-image: url("../img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash.jpg");
                     background-position: center top;
                     background-repeat: no-repeat;
                     background-size: cover;
                     grid-area: gallery-closeUp;
                     width: 100%;
-
                     @include lg {
                         background-position: center 30%;
                         background-size: cover;
-
                     }
-
                     // @include xl {
                     //     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
                     // }
-
-
-
-
                 }
 
-                li:nth-child(3){
+                li:nth-child(3) {
                     background-image: url("../img/Gallery/kari-shea-laHwVPkMTzY-unsplash.jpg");
                     background-position: center top;
                     background-repeat: no-repeat;
                     background-size: cover;
                     grid-area: gallery-bass;
                     width: 100%;
-
                     @include md {
                         background-size: 170% auto;
                         background-position: left 20%;
-
                     }
-
                     @include lg {
-                        background-position: 0% 30%;
+                        background-position: 0 30%;
                         background-size: 210% auto;
-
                     }
-
                     // @include xl {
                     //     border-radius: 45% 55% 22% 78% / 32% 26% 74% 68%;
                     // }
-
                 }
-
             }
         }
     }

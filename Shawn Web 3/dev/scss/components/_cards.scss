@@ -9,29 +9,26 @@
     background-color: $off-white;
 
     figure {
-        border-radius: 16px 16px 0px 0px;
+        border-radius: 16px 16px 0 0;
         height: 100vw;
         @include md {
             height: rem-calc(304px);
         }
         @include lg {
             height: rem-calc(296px);
-}
+        }
     }
 
     div {
         padding: 16px 24px;
-
         @include lg {
             padding: 8px 24px;
         }
-
 
         h4 {
             @include lg {
                 font-size: rem-calc(20px);
             }
-
         }
 
         p {

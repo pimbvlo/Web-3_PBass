@@ -23,6 +23,9 @@ h3 {
     font-size: rem-calc(32px);
     line-height: rem-calc(32px);
     padding-bottom: rem-calc(24px);
+    @include xl {
+        padding-bottom: rem-calc(32px);
+    }
 }
 
 h4 {

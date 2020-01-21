@@ -329,9 +329,9 @@ ul {
   @media (min-width: 1024px) {
     .section-content {
       padding: 96px 0; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1400px) {
     .section-content {
-      padding: 104px 0; } }
+      padding: 200px 0; } }
 
 /* =============
     Typography
@@ -356,6 +356,9 @@ h3 {
   font-size: 2rem;
   line-height: 2rem;
   padding-bottom: 1.5rem; }
+  @media (min-width: 1400px) {
+    h3 {
+      padding-bottom: 2rem; } }
 
 h4 {
   font-size: 1.5rem;
@@ -397,7 +400,7 @@ textarea {
   border-radius: 16px;
   background-color: #FCFCFC; }
   .cardFamous figure {
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16px 0 0;
     height: 100vw; }
     @media (min-width: 768px) {
       .cardFamous figure {
@@ -436,11 +439,11 @@ footer {
     grid-template-columns: auto;
     grid-template-areas: "footer-figure" "footer-p1" "footer-p2";
     grid-area: footer-content;
-    padding: 40px 0px; }
+    padding: 40px 0; }
     @media (min-width: 768px) {
       footer > div {
         grid-template-columns: auto 60%;
-        grid-template-areas: "footer-figure footer-p2" "footer-figure footer-p1"; } }
+        grid-template-areas: "footer-figure footer-p1" "footer-figure footer-p2"; } }
     footer > div figure {
       width: 80px;
       margin-bottom: 16px;
@@ -453,9 +456,9 @@ footer {
       footer > div figure img {
         width: 100%;
         height: 100%; }
-    footer > div p:nth-child(1) {
-      grid-area: footer-p1; }
     footer > div p:nth-child(2) {
+      grid-area: footer-p1; }
+    footer > div p:nth-child(3) {
       margin-bottom: 8px;
       grid-area: footer-p2; }
 
@@ -474,7 +477,7 @@ footer {
       background-size: auto 140%; } }
   @media (min-width: 1024px) {
     #hero {
-      background-position: 0% top;
+      background-position: 0 top;
       background-size: auto 150%;
       height: 80vh;
       width: 100vw; } }
@@ -493,9 +496,9 @@ footer {
     @media (min-width: 1024px) {
       #hero > div {
         grid-template-columns: auto 960px auto; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1400px) {
       #hero > div {
-        grid-template-columns: auto 1024px auto; } }
+        grid-template-columns: auto 1200px auto; } }
     #hero > div article {
       grid-area: hero-content;
       margin-top: 3.5rem; }
@@ -516,6 +519,10 @@ footer {
         @media (min-width: 1024px) {
           #hero > div article h1 {
             width: 35rem; } }
+        @media (min-width: 1400px) {
+          #hero > div article h1 {
+            font-size: 6rem;
+            line-height: 6rem; } }
       #hero > div article h2 {
         color: #FF5D00;
         font-size: 2.5rem;
@@ -524,6 +531,10 @@ footer {
         @media (min-width: 768px) {
           #hero > div article h2 {
             margin-top: 7.5rem; } }
+        @media (min-width: 1400px) {
+          #hero > div article h2 {
+            font-size: 3.5rem;
+            line-height: 3.5rem; } }
 
 /* =============
     firstPrecision
@@ -654,11 +665,17 @@ footer {
             background-position: left 20%; } }
         @media (min-width: 1024px) {
           #gallery > div article ul li:nth-child(3) {
-            background-position: 0% 30%;
+            background-position: 0 30%;
             background-size: 210% auto; } }
 
 /* =============
     famousPlayers
+============= */
+/* =============
+    I wanna add this for smooth corners:
+
+    https://github.com/iamvdo/css-houdini.rocks
+    http://iamvdo.me/en/blog/smooth-corners-with-css-houdini
 ============= */
 #famous > div .topImg {
   background-image: url("../img/FamousPlayers/TopBG.svg");
@@ -689,7 +706,7 @@ footer {
   display: grid;
   grid-template-areas: ". famous-h3 ." ". famous-ul .";
   grid-template-columns: 16px auto 16px;
-  padding: 72px 0px; }
+  padding: 72px 0; }
   @media (min-width: 1024px) {
     #famous > div article {
       grid-template-columns: auto 960px auto;
@@ -697,15 +714,16 @@ footer {
   @media (min-width: 1400px) {
     #famous > div article {
       grid-template-columns: auto 1024px auto;
-      padding: 104px 0px; } }
+      padding: 104px 0; } }
   #famous > div article h3 {
     grid-area: famous-h3; }
   #famous > div article ul {
     display: grid;
     grid-area: famous-ul;
     grid-gap: 16px;
-    grid-template-areas: "famous-Simonon" "famous-Mendel" "famous-Kaye" "famous-Entwistle" "famous-McKagan" "famous-Ramone";
-    grid-template-columns: repeat(1, 1fr); }
+    grid-template-areas: "famous-Simonon" "famous-Mendel";
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 16px; }
     @media (min-width: 768px) {
       #famous > div article ul {
         grid-template-areas: "famous-Simonon famous-Mendel famous-Kaye" "famous-Entwistle famous-McKagan famous-Ramone";
@@ -850,6 +868,7 @@ footer {
   #patentSketch > div article {
     grid-area: patent-article;
     color: #FFF;
+    text-align: justify;
     display: grid;
     grid-template-areas: ". patent-content .";
     grid-template-columns: 16px auto 16px; }

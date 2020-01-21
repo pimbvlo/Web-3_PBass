@@ -1,6 +1,12 @@
 /* =============
     famousPlayers
 ============= */
+/* =============
+    I wanna add this for smooth corners:
+
+    https://github.com/iamvdo/css-houdini.rocks
+    http://iamvdo.me/en/blog/smooth-corners-with-css-houdini
+============= */
 #famous {
     > div {
         .topImg {
@@ -26,7 +32,6 @@
                 background-size: 5000px auto;
                 height: 320px;
             }
-
         }
 
         article {
@@ -34,15 +39,14 @@
             display: grid;
             grid-template-areas: ". famous-h3 ." ". famous-ul .";
             grid-template-columns: 16px auto 16px;
-            padding: 72px 0px;
+            padding: 72px 0;
             @include lg {
                 grid-template-columns: auto 960px auto;
                 padding: 0;
             }
-
             @include xl {
                 grid-template-columns: auto 1024px auto;
-                padding: 104px 0px;
+                padding: 104px 0;
             }
 
             h3 {
@@ -53,8 +57,10 @@
                 display: grid;
                 grid-area: famous-ul;
                 grid-gap: 16px;
-                grid-template-areas: "famous-Simonon" "famous-Mendel" "famous-Kaye" "famous-Entwistle" "famous-McKagan" "famous-Ramone";
+                // "famous-Kaye" "famous-Entwistle" "famous-McKagan" "famous-Ramone"
+                grid-template-areas: "famous-Simonon" "famous-Mendel";
                 grid-template-columns: repeat(1,1fr);
+                padding: 0 16px;
                 @include md {
                     grid-template-areas: "famous-Simonon famous-Mendel famous-Kaye" "famous-Entwistle famous-McKagan famous-Ramone";
                     grid-template-columns: repeat(3,1fr);
@@ -230,7 +236,6 @@
                 background-size: 5000px auto;
                 height: 364px;
             }
-
         }
     }
 }

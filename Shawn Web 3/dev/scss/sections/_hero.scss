@@ -1,7 +1,6 @@
 /* =============
     hero
 ============= */
-
 #hero {
     background-image: url("../img/Hero/getulio-moraes-0crScaMEJj4-unsplash.jpg");
     background-position: 55% top;
@@ -13,7 +12,7 @@
         background-size: auto 140%;
     }
     @include lg {
-        background-position: 0% top;
+        background-position: 0 top;
         background-size: auto 150%;
         height: 80vh;
         width: 100vw;
@@ -22,7 +21,6 @@
         background-position: center top;
         background-size: cover;
         height: 100vh;
-
     }
 
     > div {
@@ -35,10 +33,9 @@
         @include lg {
             grid-template-columns: auto 960px auto;
         }
-        @include lg {
-            grid-template-columns: auto 1024px auto;
+        @include xl {
+            grid-template-columns: auto 1200px auto;
         }
-
 
         article {
             grid-area: hero-content;
@@ -49,7 +46,6 @@
             @include lg {
                 margin-top: rem-calc(176px);
             }
-
 
             h1 {
                 color: $off-white;
@@ -62,6 +58,10 @@
                 @include lg {
                     width: rem-calc(560px);
                 }
+                @include xl {
+                    font-size: rem-calc(96px);
+                    line-height: rem-calc(96px);
+                }
             }
 
             h2 {
@@ -71,6 +71,10 @@
                 margin-top: rem-calc(160px);
                 @include md {
                     margin-top: rem-calc(120px);
+                }
+                @include xl {
+                    font-size: rem-calc(56px);
+                    line-height: rem-calc(56px);
                 }
             }
         }

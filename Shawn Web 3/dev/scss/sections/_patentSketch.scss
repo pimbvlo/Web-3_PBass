@@ -22,7 +22,6 @@
         @include xl {
             height: 364px;
         }
-
     }
 
     > div {
@@ -44,6 +43,7 @@
         article {
             grid-area: patent-article;
             color: $white;
+            text-align: justify;
             display: grid;
             grid-template-areas: ". patent-content .";
             grid-template-columns: 16px auto 16px;
