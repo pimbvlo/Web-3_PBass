@@ -1,0 +1,42 @@
+/* =============
+    Cards
+============= */
+.cardFamous {
+    // width: 272px;
+    // height: 372px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .05), 0 1px 10px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04);
+    border-radius: 16px;
+    background-color: $off-white;
+
+    figure {
+        border-radius: 16px 16px 0px 0px;
+        height: 100vw;
+        @include md {
+            height: rem-calc(304px);
+        }
+        @include lg {
+            height: rem-calc(296px);
+}
+    }
+
+    div {
+        padding: 16px 24px;
+
+        @include lg {
+            padding: 8px 24px;
+        }
+
+
+        h4 {
+            @include lg {
+                font-size: rem-calc(20px);
+            }
+
+        }
+
+        p {
+            font-size: rem-calc(16px);
+            padding-top: rem-calc(0px);
+        }
+    }
+}

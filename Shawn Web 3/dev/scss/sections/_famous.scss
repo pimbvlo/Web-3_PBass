@@ -1,0 +1,219 @@
+/* =============
+    famousPlayers
+============= */
+#famous {
+    > div {
+        .topImg {
+            background-image: url("../img/FamousPlayers/TopBG.svg");
+            background-position: 30% top;
+            background-repeat: no-repeat;
+            background-size: 150% auto;
+            height: 36px;
+            width: 100%;
+            @include md {
+                background-position: 20% top;
+                background-size: 140% auto;
+                height: 72px;
+            }
+            @include lg {
+                background-position: 20% top;
+                background-size: 2000px auto;
+                height: 200px;
+                width: 100vw;
+            }
+        }
+
+        article {
+            background-color: $light-orange;
+            display: grid;
+            grid-template-areas: ". famous-h3 ." ". famous-ul .";
+            grid-template-columns: 16px auto 16px;
+            padding: 36px 0;
+            @include lg {
+                grid-template-columns: auto 960px auto;
+                padding: 0;
+            }
+
+            h3 {
+                grid-area: famous-h3;
+            }
+
+            ul {
+                display: grid;
+                grid-area: famous-ul;
+                grid-gap: 16px;
+                grid-template-areas: "famous-Simonon" "famous-Mendel" "famous-Kaye" "famous-Entwistle" "famous-McKagan" "famous-Ramone";
+                grid-template-columns: repeat(1,1fr);
+                @include md {
+                    grid-template-areas: "famous-Simonon famous-Mendel famous-Kaye" "famous-Entwistle famous-McKagan famous-Ramone";
+                    grid-template-columns: repeat(3,1fr);
+                }
+                @include lg {
+                    grid-gap: 24px;
+                    // grid-template-areas: "famous-Simonon famous-Mendel famous-Kaye famous-Kaye famous-Entwistle" "famous-Ramone famous-Ramone famous-Ramone famous-McKagan famous-McKagan";
+                    // grid-template-columns: repeat(5,1fr);
+                    grid-template-areas: "famous-Simonon famous-Mendel famous-Kaye" "famous-Ramone famous-McKagan famous-Entwistle";
+                    grid-template-columns: repeat(3,1fr);
+                }
+
+                li {
+                    > figure {}
+                }
+
+                > div {
+                    h4 {}
+
+                    p {}
+                }
+            }
+
+            li:nth-child(1) {
+                grid-area: famous-Simonon;
+
+                > figure {
+                    background-image: url("../img/FamousPlayers/Simonon.jpg");
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                > div {
+                    h4 {}
+
+                    p {}
+                }
+            }
+
+            li:nth-child(2) {
+                grid-area: famous-Mendel;
+
+                > figure {
+                    background-image: url("../img/FamousPlayers/Mendel.jpg");
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                > div {
+                    h4 {}
+
+                    p {}
+                }
+            }
+
+            li:nth-child(3) {
+                display: none;
+                grid-area: famous-Kaye;
+                @include md {
+                    display: initial;
+                }
+
+                > figure {
+                    background-image: url("../img/FamousPlayers/Kaye.jpg");
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include lg {
+                        background-position: center 30%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+
+                > div {
+                    h4 {}
+
+                    p {}
+                }
+            }
+
+            li:nth-child(4) {
+                display: none;
+                grid-area: famous-Entwistle;
+                @include md {
+                    display: initial;
+                }
+
+                > figure {
+                    background-image: url("../img/FamousPlayers/Entwistle.jpg");
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                > div {
+                    h4 {}
+
+                    p {}
+                }
+            }
+
+            li:nth-child(5) {
+                display: none;
+                grid-area: famous-McKagan;
+                @include md {
+                    display: initial;
+                }
+
+                > figure {
+                    background-image: url("../img/FamousPlayers/McKagan.jpg");
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include lg {
+                        background-position: center 0;
+                        background-repeat: no-repeat;
+                        background-size: 110% auto;
+                    }
+                }
+
+                > div {
+                    h4 {}
+
+                    p {}
+                }
+            }
+
+            li:nth-child(6) {
+                display: none;
+                grid-area: famous-Ramone;
+                @include md {
+                    display: initial;
+                }
+
+                > figure {
+                    background-image: url("../img/FamousPlayers/Ramone.jpg");
+                    background-position: center bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                > div {
+                    h4 {}
+
+                    p {}
+                }
+            }
+        }
+
+        .bottomImg {
+            background-image: url("../img/FamousPlayers/BottomBG.svg");
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: 120% auto;
+            height: 36px;
+            width: 100%;
+            @include md {
+                background-position: 10% bottom;
+                background-size: 120% auto;
+                height: 72px;
+            }
+            @include lg {
+                background-position: 85% bottom;
+                background-size: 2000px auto;
+                height: 200px;
+                width: 100vw;
+            }
+        }
+    }
+}

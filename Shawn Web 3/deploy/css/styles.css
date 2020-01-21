@@ -28,8 +28,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0;
-  background-color: #FCFCFC; }
+  margin: 0; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -312,6 +311,9 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: #FCFCFC; }
+
 figure {
   padding: 0;
   margin: 0; }
@@ -321,6 +323,12 @@ ul {
   margin: 0; }
   ul li {
     list-style: none; }
+
+.section-content {
+  padding: 72px 0; }
+  @media (min-width: 1024px) {
+    .section-content {
+      padding: 96px 0; } }
 
 /* =============
     Typography
@@ -343,7 +351,8 @@ h4 {
 
 h3 {
   font-size: 2rem;
-  line-height: 2rem; }
+  line-height: 2rem;
+  padding-bottom: 1.5rem; }
 
 h4 {
   font-size: 1.5rem;
@@ -378,13 +387,41 @@ textarea {
     Navigation
 ============= */
 /* =============
+    Cards
+============= */
+.cardFamous {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  background-color: #FCFCFC; }
+  .cardFamous figure {
+    border-radius: 16px 16px 0px 0px;
+    height: 100vw; }
+    @media (min-width: 768px) {
+      .cardFamous figure {
+        height: 19rem; } }
+    @media (min-width: 1024px) {
+      .cardFamous figure {
+        height: 18.5rem; } }
+  .cardFamous div {
+    padding: 16px 24px; }
+    @media (min-width: 1024px) {
+      .cardFamous div {
+        padding: 8px 24px; } }
+    @media (min-width: 1024px) {
+      .cardFamous div h4 {
+        font-size: 1.25rem; } }
+    .cardFamous div p {
+      font-size: 1rem;
+      padding-top: 0; }
+
+/* =============
     Header
 ============= */
 /* =============
     Footer
 ============= */
 /* =============
-    Heroes
+    hero
 ============= */
 #hero {
   background-image: url("../img/Hero/getulio-moraes-0crScaMEJj4-unsplash.jpg");
@@ -411,7 +448,7 @@ textarea {
         grid-template-columns: 300px auto 32px; } }
     @media (min-width: 1024px) {
       #hero > div {
-        grid-template-columns: auto 1024px auto; } }
+        grid-template-columns: auto 960px auto; } }
     #hero > div article {
       grid-area: hero-content;
       margin-top: 3.5rem; }
@@ -440,3 +477,268 @@ textarea {
         @media (min-width: 768px) {
           #hero > div article h2 {
             margin-top: 7.5rem; } }
+
+/* =============
+    firstPrecision
+============= */
+#first {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "first-content"; }
+  #first > div {
+    display: grid;
+    grid-area: first-content;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "first-article" "first-figure"; }
+    @media (min-width: 1024px) {
+      #first > div {
+        grid-template-columns: 600px auto 24px;
+        grid-template-areas: "first-figure first-article ."; } }
+    @media (min-width: 1400px) {
+      #first > div {
+        grid-template-columns: 600px auto 224px;
+        grid-template-areas: "first-figure first-article ."; } }
+    #first > div article {
+      grid-area: first-article;
+      display: grid;
+      grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". first-article-h3 ." ". first-article-p ."; }
+      @media (min-width: 768px) {
+        #first > div article {
+          grid-template-columns: 288px auto 112px; } }
+      @media (min-width: 1024px) {
+        #first > div article {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-areas: "first-article-h3" "first-article-p";
+          padding-left: 24px; } }
+      @media (min-width: 1400px) {
+        #first > div article {
+          padding-left: 104px; } }
+      #first > div article h3 {
+        grid-area: first-article-h3; }
+      #first > div article p {
+        grid-area: first-article-p;
+        padding-bottom: 1.5rem; }
+    #first > div figure {
+      background-image: url("../img/FirstPrecision/PrecisionHeadstock.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: contain;
+      grid-area: first-figure;
+      width: 80vw;
+      height: 9.375rem;
+      display: flex;
+      justify-content: flex-start;
+      align-self: center; }
+      @media (min-width: 768px) {
+        #first > div figure {
+          width: 90vw;
+          height: 20rem; } }
+      @media (min-width: 1024px) {
+        #first > div figure {
+          width: 100%;
+          height: 15rem; } }
+
+/* =============
+    gallery
+============= */
+#gallery {
+  display: grid;
+  grid-template-areas: "gallery-content";
+  grid-template-columns: repeat(1, 1fr); }
+  @media (min-width: 1024px) {
+    #gallery {
+      grid-template-columns: auto 1024px auto;
+      grid-template-areas: ". gallery-content ."; } }
+  #gallery > div {
+    grid-area: gallery-content; }
+    #gallery > div article ul {
+      display: grid;
+      grid-template-areas: "gallery-concert" "gallery-closeUp" "gallery-bass";
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 256px 408px 408px;
+      grid-gap: 1.5rem; }
+      @media (min-width: 768px) {
+        #gallery > div article ul {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: 400px 296px;
+          grid-template-areas: "gallery-bass gallery-bass gallery-closeUp" "gallery-concert gallery-concert gallery-concert"; } }
+      @media (min-width: 1024px) {
+        #gallery > div article ul {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: 296px 296px;
+          grid-template-areas: "gallery-bass gallery-concert gallery-concert" "gallery-bass gallery-closeUp gallery-closeUp"; } }
+      #gallery > div article ul li:nth-child(1) {
+        background-image: url("../img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: gallery-concert;
+        width: 100%; }
+        @media (min-width: 768px) {
+          #gallery > div article ul li:nth-child(1) {
+            background-position: center 30%;
+            background-size: cover; } }
+      #gallery > div article ul li:nth-child(2) {
+        background-image: url("../img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: gallery-closeUp;
+        width: 100%; }
+        @media (min-width: 1024px) {
+          #gallery > div article ul li:nth-child(2) {
+            background-position: center 30%;
+            background-size: cover; } }
+      #gallery > div article ul li:nth-child(3) {
+        background-image: url("../img/Gallery/kari-shea-laHwVPkMTzY-unsplash.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: gallery-bass;
+        width: 100%; }
+        @media (min-width: 768px) {
+          #gallery > div article ul li:nth-child(3) {
+            background-size: 170% auto;
+            background-position: left 20%; } }
+        @media (min-width: 1024px) {
+          #gallery > div article ul li:nth-child(3) {
+            background-position: 0% 30%;
+            background-size: 210% auto; } }
+
+/* =============
+    famousPlayers
+============= */
+#famous > div .topImg {
+  background-image: url("../img/FamousPlayers/TopBG.svg");
+  background-position: 30% top;
+  background-repeat: no-repeat;
+  background-size: 150% auto;
+  height: 36px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    #famous > div .topImg {
+      background-position: 20% top;
+      background-size: 140% auto;
+      height: 72px; } }
+  @media (min-width: 1024px) {
+    #famous > div .topImg {
+      background-position: 20% top;
+      background-size: 2000px auto;
+      height: 200px;
+      width: 100vw; } }
+
+#famous > div article {
+  background-color: #FFF5F0;
+  display: grid;
+  grid-template-areas: ". famous-h3 ." ". famous-ul .";
+  grid-template-columns: 16px auto 16px;
+  padding: 36px 0; }
+  @media (min-width: 1024px) {
+    #famous > div article {
+      grid-template-columns: auto 960px auto;
+      padding: 0; } }
+  #famous > div article h3 {
+    grid-area: famous-h3; }
+  #famous > div article ul {
+    display: grid;
+    grid-area: famous-ul;
+    grid-gap: 16px;
+    grid-template-areas: "famous-Simonon" "famous-Mendel" "famous-Kaye" "famous-Entwistle" "famous-McKagan" "famous-Ramone";
+    grid-template-columns: repeat(1, 1fr); }
+    @media (min-width: 768px) {
+      #famous > div article ul {
+        grid-template-areas: "famous-Simonon famous-Mendel famous-Kaye" "famous-Entwistle famous-McKagan famous-Ramone";
+        grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 1024px) {
+      #famous > div article ul {
+        grid-gap: 24px;
+        grid-template-areas: "famous-Simonon famous-Mendel famous-Kaye" "famous-Ramone famous-McKagan famous-Entwistle";
+        grid-template-columns: repeat(3, 1fr); } }
+  #famous > div article li:nth-child(1) {
+    grid-area: famous-Simonon; }
+    #famous > div article li:nth-child(1) > figure {
+      background-image: url("../img/FamousPlayers/Simonon.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover; }
+  #famous > div article li:nth-child(2) {
+    grid-area: famous-Mendel; }
+    #famous > div article li:nth-child(2) > figure {
+      background-image: url("../img/FamousPlayers/Mendel.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover; }
+  #famous > div article li:nth-child(3) {
+    display: none;
+    grid-area: famous-Kaye; }
+    @media (min-width: 768px) {
+      #famous > div article li:nth-child(3) {
+        display: initial; } }
+    #famous > div article li:nth-child(3) > figure {
+      background-image: url("../img/FamousPlayers/Kaye.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media (min-width: 1024px) {
+        #famous > div article li:nth-child(3) > figure {
+          background-position: center 30%;
+          background-repeat: no-repeat;
+          background-size: cover; } }
+  #famous > div article li:nth-child(4) {
+    display: none;
+    grid-area: famous-Entwistle; }
+    @media (min-width: 768px) {
+      #famous > div article li:nth-child(4) {
+        display: initial; } }
+    #famous > div article li:nth-child(4) > figure {
+      background-image: url("../img/FamousPlayers/Entwistle.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover; }
+  #famous > div article li:nth-child(5) {
+    display: none;
+    grid-area: famous-McKagan; }
+    @media (min-width: 768px) {
+      #famous > div article li:nth-child(5) {
+        display: initial; } }
+    #famous > div article li:nth-child(5) > figure {
+      background-image: url("../img/FamousPlayers/McKagan.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media (min-width: 1024px) {
+        #famous > div article li:nth-child(5) > figure {
+          background-position: center 0;
+          background-repeat: no-repeat;
+          background-size: 110% auto; } }
+  #famous > div article li:nth-child(6) {
+    display: none;
+    grid-area: famous-Ramone; }
+    @media (min-width: 768px) {
+      #famous > div article li:nth-child(6) {
+        display: initial; } }
+    #famous > div article li:nth-child(6) > figure {
+      background-image: url("../img/FamousPlayers/Ramone.jpg");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+#famous > div .bottomImg {
+  background-image: url("../img/FamousPlayers/BottomBG.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 120% auto;
+  height: 36px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    #famous > div .bottomImg {
+      background-position: 10% bottom;
+      background-size: 120% auto;
+      height: 72px; } }
+  @media (min-width: 1024px) {
+    #famous > div .bottomImg {
+      background-position: 85% bottom;
+      background-size: 2000px auto;
+      height: 200px;
+      width: 100vw; } }

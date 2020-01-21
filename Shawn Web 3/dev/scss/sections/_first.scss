@@ -1,0 +1,77 @@
+/* =============
+    firstPrecision
+============= */
+
+#first {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "first-content";
+
+    > div {
+        display: grid;
+        grid-area: first-content;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "first-article" "first-figure";
+        @include lg {
+            grid-template-columns: 600px auto 24px;
+            grid-template-areas: "first-figure first-article .";
+        }
+        @include xl {
+            grid-template-columns: 600px auto 224px;
+            grid-template-areas: "first-figure first-article .";
+        }
+
+        article {
+            grid-area: first-article;
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". first-article-h3 ." ". first-article-p .";
+            @include md {
+                grid-template-columns: 288px auto 112px;
+            }
+            @include lg {
+                grid-template-columns: repeat(1,1fr);
+                grid-template-areas: "first-article-h3" "first-article-p";
+                padding-left: 24px;
+
+            }
+            @include xl {
+                padding-left: 104px;
+
+            }
+
+            h3 {
+                grid-area: first-article-h3;
+            }
+
+            p {
+                grid-area: first-article-p;
+                padding-bottom: rem-calc(24px);
+            }
+        }
+
+        figure {
+            background-image: url("../img/FirstPrecision/PrecisionHeadstock.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: contain;
+            grid-area: first-figure;
+            width: 80vw;
+            height: rem-calc(150px);
+            display: flex;
+            justify-content: flex-start;
+            align-self: center;
+            @include md {
+                width: 90vw;
+                height: rem-calc(320px);
+
+            }
+            @include lg {
+                width: 100%;
+                height: rem-calc(240px);
+
+            }
+
+        }
+    }
+}

@@ -1,6 +1,7 @@
 /* =============
-    Heroes
+    hero
 ============= */
+
 #hero {
     background-image: url("../img/Hero/getulio-moraes-0crScaMEJj4-unsplash.jpg");
     background-position: 55% top;
@@ -26,7 +27,7 @@
             grid-template-columns: 300px auto 32px;
         }
         @include lg {
-            grid-template-columns: auto 1024px auto;
+            grid-template-columns: auto 960px auto;
         }
 
         article {

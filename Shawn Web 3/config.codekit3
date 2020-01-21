@@ -19,6 +19,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/FamousPlayers/BottomBG.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/FamousPlayers/BottomBG.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/FamousPlayers/Entwistle.jpg": {
 		"ft": 16384,
 		"iS": 134505,
@@ -47,6 +57,72 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/FamousPlayers/Entwistle@3x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/Kaye.jpg": {
+		"ft": 16384,
+		"iS": 119757,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/Kaye.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/Kaye@2x.jpg": {
+		"ft": 16384,
+		"iS": 395372,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/Kaye@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/Kaye@3x.jpg": {
+		"ft": 16384,
+		"iS": 866960,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/Kaye@3x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/McKagan.jpg": {
+		"ft": 16384,
+		"iS": 258870,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/McKagan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/McKagan@2x.jpg": {
+		"ft": 16384,
+		"iS": 778209,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/McKagan@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/McKagan@3x.jpg": {
+		"ft": 16384,
+		"iS": 1674388,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/McKagan@3x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -85,6 +161,82 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/FamousPlayers/Ramone.jpg": {
+		"ft": 16384,
+		"iS": 218933,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/Ramone.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/Ramone@2x.jpg": {
+		"ft": 16384,
+		"iS": 729546,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/Ramone@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/Ramone@3x.jpg": {
+		"ft": 16384,
+		"iS": 1595631,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/Ramone@3x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/Simonon.jpg": {
+		"ft": 16384,
+		"iS": 294841,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/Simonon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/Simonon@2x.jpg": {
+		"ft": 16384,
+		"iS": 933162,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/Simonon@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/Simonon@3x.jpg": {
+		"ft": 16384,
+		"iS": 1999568,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/FamousPlayers/Simonon@3x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/FamousPlayers/TopBG.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/FamousPlayers/TopBG.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/FirstPrecision/PrecisionHeadstock.png": {
 		"ft": 32768,
 		"iS": 269728,
@@ -118,103 +270,103 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash.png": {
-		"ft": 32768,
-		"iS": 700619,
+	"/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash.jpg": {
+		"ft": 16384,
+		"iS": 438566,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash.png",
+		"oAP": "/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash@2x.png": {
-		"ft": 32768,
-		"iS": 1959926,
+	"/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash@2x.jpg": {
+		"ft": 16384,
+		"iS": 1348178,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash@2x.png",
+		"oAP": "/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash@3x.png": {
-		"ft": 32768,
-		"iS": 3332355,
+	"/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash@3x.jpg": {
+		"ft": 16384,
+		"iS": 2882255,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash@3x.png",
+		"oAP": "/deploy/img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash@3x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash.png": {
-		"ft": 32768,
-		"iS": 957849,
+	"/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash.jpg": {
+		"ft": 16384,
+		"iS": 805696,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash.png",
+		"oAP": "/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash@2x.png": {
-		"ft": 32768,
-		"iS": 3434698,
+	"/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash@2x.jpg": {
+		"ft": 16384,
+		"iS": 2730364,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash@2x.png",
+		"oAP": "/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash@3x.png": {
-		"ft": 32768,
-		"iS": 6600437,
+	"/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash@3x.jpg": {
+		"ft": 16384,
+		"iS": 5946220,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash@3x.png",
+		"oAP": "/deploy/img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash@3x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash (2).png": {
-		"ft": 32768,
-		"iS": 665474,
+	"/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash.jpg": {
+		"ft": 16384,
+		"iS": 269940,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash (2).png",
+		"oAP": "/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash (2)@2x.png": {
-		"ft": 32768,
-		"iS": 1865917,
+	"/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash@2x.jpg": {
+		"ft": 16384,
+		"iS": 952851,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash (2)@2x.png",
+		"oAP": "/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash (2)@3x.png": {
-		"ft": 32768,
-		"iS": 3374756,
+	"/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash@3x.jpg": {
+		"ft": 16384,
+		"iS": 2019798,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash (2)@3x.png",
+		"oAP": "/deploy/img/Gallery/kari-shea-laHwVPkMTzY-unsplash@3x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/Hero/getulio-moraes-0crScaMEJj4-unsplash.jpg": {
@@ -368,6 +520,30 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/famousPlayers.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/famousPlayers.html",
+		"oF": 0
+		},
+	"/dev/firstPrecision.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/firstPrecision.html",
+		"oF": 0
+		},
+	"/dev/gallery.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/gallery.html",
+		"oF": 0
+		},
 	"/dev/hero.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -447,6 +623,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/components/_cards.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_cards.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/components/_forms.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -521,6 +710,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_famous.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_famous.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_first.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_first.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_gallery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_gallery.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

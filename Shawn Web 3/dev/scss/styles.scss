@@ -13,6 +13,7 @@
 @import "components/_buttons";
 @import "components/_forms";
 @import "components/_navigation";
+@import "components/_cards";
 
 // Layout Styles
 @import "layout/_header";
@@ -20,3 +21,6 @@
 
 // Sections Styles
 @import "sections/_hero";
+@import "sections/_first";
+@import "sections/_gallery";
+@import "sections/_famous";
