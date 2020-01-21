@@ -329,6 +329,9 @@ ul {
   @media (min-width: 1024px) {
     .section-content {
       padding: 96px 0; } }
+  @media (min-width: 1024px) {
+    .section-content {
+      padding: 104px 0; } }
 
 /* =============
     Typography
@@ -473,8 +476,13 @@ footer {
     #hero {
       background-position: 0% top;
       background-size: auto 150%;
-      height: 100vh;
+      height: 80vh;
       width: 100vw; } }
+  @media (min-width: 1400px) {
+    #hero {
+      background-position: center top;
+      background-size: cover;
+      height: 100vh; } }
   #hero > div {
     display: grid;
     grid-template-areas: ". hero-content .";
@@ -485,6 +493,9 @@ footer {
     @media (min-width: 1024px) {
       #hero > div {
         grid-template-columns: auto 960px auto; } }
+    @media (min-width: 1024px) {
+      #hero > div {
+        grid-template-columns: auto 1024px auto; } }
     #hero > div article {
       grid-area: hero-content;
       margin-top: 3.5rem; }
@@ -532,7 +543,7 @@ footer {
         grid-template-areas: "first-figure first-article ."; } }
     @media (min-width: 1400px) {
       #first > div {
-        grid-template-columns: 600px auto 224px;
+        grid-template-columns: auto 1024px auto;
         grid-template-areas: "first-figure first-article ."; } }
     #first > div article {
       grid-area: first-article;
@@ -549,7 +560,8 @@ footer {
           padding-left: 24px; } }
       @media (min-width: 1400px) {
         #first > div article {
-          padding-left: 104px; } }
+          padding-left: 10%;
+          grid-template-columns: 600px; } }
       #first > div article h3 {
         grid-area: first-article-h3; }
       #first > div article p {
@@ -574,6 +586,9 @@ footer {
         #first > div figure {
           width: 100%;
           height: 15rem; } }
+      @media (min-width: 1400px) {
+        #first > div figure {
+          height: 18.75rem; } }
 
 /* =============
     gallery
@@ -663,17 +678,26 @@ footer {
       background-size: 2000px auto;
       height: 200px;
       width: 100vw; } }
+  @media (min-width: 1024px) {
+    #famous > div .topImg {
+      background-position: 20% top;
+      background-size: 5000px auto;
+      height: 320px; } }
 
 #famous > div article {
   background-color: #FFF5F0;
   display: grid;
   grid-template-areas: ". famous-h3 ." ". famous-ul .";
   grid-template-columns: 16px auto 16px;
-  padding: 72px 0; }
+  padding: 72px 0px; }
   @media (min-width: 1024px) {
     #famous > div article {
       grid-template-columns: auto 960px auto;
       padding: 0; } }
+  @media (min-width: 1400px) {
+    #famous > div article {
+      grid-template-columns: auto 1024px auto;
+      padding: 104px 0px; } }
   #famous > div article h3 {
     grid-area: famous-h3; }
   #famous > div article ul {
@@ -778,6 +802,11 @@ footer {
       background-size: 2000px auto;
       height: 200px;
       width: 100vw; } }
+  @media (min-width: 1400px) {
+    #famous > div .bottomImg {
+      background-position: 85% bottom;
+      background-size: 5000px auto;
+      height: 364px; } }
 
 /* =============
     patentSketch
@@ -799,6 +828,9 @@ footer {
       height: 152px;
       background-size: 130% auto;
       background-position: 40% top; } }
+  @media (min-width: 1400px) {
+    #patentSketch figure {
+      height: 364px; } }
 
 #patentSketch > div {
   background-color: #211712;

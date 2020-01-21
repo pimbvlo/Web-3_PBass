@@ -21,6 +21,12 @@
                 height: 200px;
                 width: 100vw;
             }
+            @include lg {
+                background-position: 20% top;
+                background-size: 5000px auto;
+                height: 320px;
+            }
+
         }
 
         article {
@@ -28,10 +34,15 @@
             display: grid;
             grid-template-areas: ". famous-h3 ." ". famous-ul .";
             grid-template-columns: 16px auto 16px;
-            padding: 72px 0;
+            padding: 72px 0px;
             @include lg {
                 grid-template-columns: auto 960px auto;
                 padding: 0;
+            }
+
+            @include xl {
+                grid-template-columns: auto 1024px auto;
+                padding: 104px 0px;
             }
 
             h3 {
@@ -214,6 +225,12 @@
                 height: 200px;
                 width: 100vw;
             }
+            @include xl {
+                background-position: 85% bottom;
+                background-size: 5000px auto;
+                height: 364px;
+            }
+
         }
     }
 }

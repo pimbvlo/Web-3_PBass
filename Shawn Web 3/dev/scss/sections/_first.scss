@@ -17,7 +17,7 @@
             grid-template-areas: "first-figure first-article .";
         }
         @include xl {
-            grid-template-columns: 600px auto 224px;
+            grid-template-columns: auto 1024px auto;
             grid-template-areas: "first-figure first-article .";
         }
 
@@ -36,7 +36,9 @@
 
             }
             @include xl {
-                padding-left: 104px;
+                padding-left: 10%;
+                grid-template-columns: 600px;
+
 
             }
 
@@ -71,6 +73,12 @@
                 height: rem-calc(240px);
 
             }
+            @include xl {
+                height: rem-calc(300px);
+
+
+            }
+
 
         }
     }
