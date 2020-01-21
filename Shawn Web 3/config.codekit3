@@ -402,6 +402,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/Logo/Logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Logo/Logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/Sketch/Fig1.png": {
 		"ft": 32768,
 		"iS": 42208,
@@ -501,6 +511,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/Sketch/TopBG.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/Sketch/TopBG.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -534,6 +554,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/firstPrecision.html",
+		"oF": 0
+		},
+	"/dev/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/footer.html",
 		"oF": 0
 		},
 	"/dev/gallery.kit": {
@@ -570,6 +598,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/patentSketch.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/patentSketch.html",
+		"oF": 0
 		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
@@ -762,6 +798,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_patentSketch.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_patentSketch.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

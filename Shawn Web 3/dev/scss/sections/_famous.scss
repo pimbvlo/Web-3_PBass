@@ -28,7 +28,7 @@
             display: grid;
             grid-template-areas: ". famous-h3 ." ". famous-ul .";
             grid-template-columns: 16px auto 16px;
-            padding: 36px 0;
+            padding: 72px 0;
             @include lg {
                 grid-template-columns: auto 960px auto;
                 padding: 0;

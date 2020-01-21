@@ -1,0 +1,137 @@
+/* =============
+    patentSketch
+============= */
+#patentSketch {
+    figure {
+        background-image: url("../img/Sketch/TopBG.svg");
+        background-position: 60% top;
+        background-repeat: no-repeat;
+        background-size: 130% auto;
+        height: 48px;
+        width: 100%;
+        @include md {
+            height: 112px;
+            background-size: 130% auto;
+            background-position: 40% top;
+        }
+        @include lg {
+            height: 152px;
+            background-size: 130% auto;
+            background-position: 40% top;
+        }
+    }
+
+    > div {
+        background-color: $brown;
+        height: 904px;
+        padding-top: 36px;
+        @include md {
+            padding-top: 72px;
+        }
+        @include lg {
+            padding-top: 96px;
+            height: 632px;
+            display: grid;
+            grid-template-areas: ". patent-article ." ". patent-list .";
+            grid-template-columns: auto 1024px auto;
+            grid-template-rows: 35% auto;
+        }
+
+        article {
+            grid-area: patent-article;
+            color: $white;
+            display: grid;
+            grid-template-areas: ". patent-content .";
+            grid-template-columns: 16px auto 16px;
+            @include md {
+                grid-template-columns: 112px 400px auto;
+            }
+            @include lg {
+                grid-template-columns: 5% 464px auto;
+            }
+
+            > div {
+                grid-area: patent-content;
+
+                h3 {}
+
+                p {}
+            }
+        }
+
+        ul {
+            grid-area: patent-list;
+            position: relative;
+
+            li:nth-child(1) {
+                background-image: url("../img/Sketch/Fig1.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 130px;
+                left: -110px;
+                position: absolute;
+                top: 200px;
+                transform: rotate(-90deg);
+                width: 450px;
+                @include md {
+                    transform: rotate(0deg);
+                    left: 112px;
+                    top: 350px;
+                    height: 170px;
+                    width: 600px;
+                }
+                @include lg {
+                    left: 80px;
+                    top: 120px;
+                    height: 172px;
+                    width: 600px;
+                }
+            }
+
+            li:nth-child(2) {
+                background-image: url("../img/Sketch/Fig2.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 470px;
+                left: 270px;
+                position: absolute;
+                top: 100px;
+                width: 36px;
+                @include md {
+                    left: 600px;
+                    top: -100px;
+                    height: 425px;
+                    width: 30px;
+                }
+                @include lg {
+                    left: 850px;
+                    top: -250px;
+                    height: 520px;
+                    width: 40px;
+                }
+            }
+
+            li:nth-child(3) {
+                background-image: url("../img/Sketch/Fig4White.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: none;
+                height: 56px;
+                position: absolute;
+                width: 260px;
+                @include md {
+                    display: initial;
+                    left: 112px;
+                    top: 200px;
+                }
+                @include lg {
+                    left: 480px;
+                    top: 30px;
+                }
+            }
+        }
+    }
+}

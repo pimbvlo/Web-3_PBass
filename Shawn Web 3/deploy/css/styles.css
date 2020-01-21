@@ -420,6 +420,42 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #FFF5F0;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer-content ."; }
+  @media (min-width: 1024px) {
+    footer {
+      grid-template-columns: auto 816px auto; } }
+  footer > div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "footer-figure" "footer-p1" "footer-p2";
+    grid-area: footer-content;
+    padding: 40px 0px; }
+    @media (min-width: 768px) {
+      footer > div {
+        grid-template-columns: auto 60%;
+        grid-template-areas: "footer-figure footer-p2" "footer-figure footer-p1"; } }
+    footer > div figure {
+      width: 80px;
+      margin-bottom: 16px;
+      grid-area: footer-figure; }
+      @media (min-width: 768px) {
+        footer > div figure {
+          width: 128px;
+          display: flex;
+          align-items: center; } }
+      footer > div figure img {
+        width: 100%;
+        height: 100%; }
+    footer > div p:nth-child(1) {
+      grid-area: footer-p1; }
+    footer > div p:nth-child(2) {
+      margin-bottom: 8px;
+      grid-area: footer-p2; }
+
 /* =============
     hero
 ============= */
@@ -633,7 +669,7 @@ textarea {
   display: grid;
   grid-template-areas: ". famous-h3 ." ". famous-ul .";
   grid-template-columns: 16px auto 16px;
-  padding: 36px 0; }
+  padding: 72px 0; }
   @media (min-width: 1024px) {
     #famous > div article {
       grid-template-columns: auto 960px auto;
@@ -742,3 +778,121 @@ textarea {
       background-size: 2000px auto;
       height: 200px;
       width: 100vw; } }
+
+/* =============
+    patentSketch
+============= */
+#patentSketch figure {
+  background-image: url("../img/Sketch/TopBG.svg");
+  background-position: 60% top;
+  background-repeat: no-repeat;
+  background-size: 130% auto;
+  height: 48px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    #patentSketch figure {
+      height: 112px;
+      background-size: 130% auto;
+      background-position: 40% top; } }
+  @media (min-width: 1024px) {
+    #patentSketch figure {
+      height: 152px;
+      background-size: 130% auto;
+      background-position: 40% top; } }
+
+#patentSketch > div {
+  background-color: #211712;
+  height: 904px;
+  padding-top: 36px; }
+  @media (min-width: 768px) {
+    #patentSketch > div {
+      padding-top: 72px; } }
+  @media (min-width: 1024px) {
+    #patentSketch > div {
+      padding-top: 96px;
+      height: 632px;
+      display: grid;
+      grid-template-areas: ". patent-article ." ". patent-list .";
+      grid-template-columns: auto 1024px auto;
+      grid-template-rows: 35% auto; } }
+  #patentSketch > div article {
+    grid-area: patent-article;
+    color: #FFF;
+    display: grid;
+    grid-template-areas: ". patent-content .";
+    grid-template-columns: 16px auto 16px; }
+    @media (min-width: 768px) {
+      #patentSketch > div article {
+        grid-template-columns: 112px 400px auto; } }
+    @media (min-width: 1024px) {
+      #patentSketch > div article {
+        grid-template-columns: 5% 464px auto; } }
+    #patentSketch > div article > div {
+      grid-area: patent-content; }
+  #patentSketch > div ul {
+    grid-area: patent-list;
+    position: relative; }
+    #patentSketch > div ul li:nth-child(1) {
+      background-image: url("../img/Sketch/Fig1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 130px;
+      left: -110px;
+      position: absolute;
+      top: 200px;
+      transform: rotate(-90deg);
+      width: 450px; }
+      @media (min-width: 768px) {
+        #patentSketch > div ul li:nth-child(1) {
+          transform: rotate(0deg);
+          left: 112px;
+          top: 350px;
+          height: 170px;
+          width: 600px; } }
+      @media (min-width: 1024px) {
+        #patentSketch > div ul li:nth-child(1) {
+          left: 80px;
+          top: 120px;
+          height: 172px;
+          width: 600px; } }
+    #patentSketch > div ul li:nth-child(2) {
+      background-image: url("../img/Sketch/Fig2.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 470px;
+      left: 270px;
+      position: absolute;
+      top: 100px;
+      width: 36px; }
+      @media (min-width: 768px) {
+        #patentSketch > div ul li:nth-child(2) {
+          left: 600px;
+          top: -100px;
+          height: 425px;
+          width: 30px; } }
+      @media (min-width: 1024px) {
+        #patentSketch > div ul li:nth-child(2) {
+          left: 850px;
+          top: -250px;
+          height: 520px;
+          width: 40px; } }
+    #patentSketch > div ul li:nth-child(3) {
+      background-image: url("../img/Sketch/Fig4White.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: none;
+      height: 56px;
+      position: absolute;
+      width: 260px; }
+      @media (min-width: 768px) {
+        #patentSketch > div ul li:nth-child(3) {
+          display: initial;
+          left: 112px;
+          top: 200px; } }
+      @media (min-width: 1024px) {
+        #patentSketch > div ul li:nth-child(3) {
+          left: 480px;
+          top: 30px; } }

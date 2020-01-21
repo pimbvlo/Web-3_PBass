@@ -1,3 +1,66 @@
 /* =============
     Footer
 ============= */
+footer {
+    background-color: $light-orange;
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer-content .";
+    @include lg {
+        grid-template-columns: auto 816px auto;
+
+
+    }
+
+
+    > div {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "footer-figure" "footer-p1" "footer-p2" ;
+
+        grid-area: footer-content;
+        padding: 40px 0px;
+        @include md {
+
+            grid-template-columns: auto 60%;
+            grid-template-areas:
+            "footer-figure footer-p2"
+            "footer-figure footer-p1";
+            // Why is this switching actual p1 and p2?
+
+
+        }
+        @include lg {
+
+
+        }
+
+        figure {
+            width: 80px;
+            margin-bottom: 16px;
+            grid-area: footer-figure;
+            @include md {
+                width: 128px;
+                display: flex;
+                align-items: center;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+        p:nth-child(1) {
+            grid-area: footer-p1;
+
+        }
+
+        p:nth-child(2) {
+            margin-bottom: 8px;
+            grid-area: footer-p2;
+
+        }
+    }
+}
