@@ -423,6 +423,22 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #FFF5F0;
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: ". header .";
+  padding: 10px 0; }
+  header > div {
+    grid-area: header;
+    display: flex;
+    justify-content: flex-end; }
+    header > div #burger-container svg {
+      height: 44px;
+      cursor: pointer; }
+
 /* =============
     Footer
 ============= */

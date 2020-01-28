@@ -1,3 +1,25 @@
 /* =============
     Header
 ============= */
+header{
+    position: fixed;
+    width: 100%;
+    background-color: $light-orange;
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". header .";
+    padding: 10px 0;
+
+    >div{
+        grid-area: header;
+        display: flex;
+        justify-content: flex-end;
+
+        #burger-container{
+            svg{
+                height: 44px;
+                cursor: pointer;
+            }
+        }
+    }
+}
