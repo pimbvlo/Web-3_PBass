@@ -1,8 +1,8 @@
 
 // timeline for the burger lines to become 1 line
 var lineToLine = gsap.timeline({paused:true});
-lineToLine.to("#top-line",{duration:0.25, y:8},"move-lines")
-.to("#bottom-line",{duration:0.25, y:-8},"move-lines");
+lineToLine.to("#top-line",{duration:burgerSpeed, y:8},"move-lines")
+.to("#bottom-line",{duration:burgerSpeed, y:-8},"move-lines");
 
 
 $("#burger-container").on("mouseenter", function(){

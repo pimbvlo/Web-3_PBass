@@ -424,11 +424,12 @@ textarea {
     Header
 ============= */
 header {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04);
   position: fixed;
   width: 100%;
   background-color: #FFF5F0;
   display: grid;
-  grid-template-columns: 20px auto 20px;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
   padding: 10px 0; }
   header > div {
@@ -436,7 +437,7 @@ header {
     display: flex;
     justify-content: flex-end; }
     header > div #burger-container svg {
-      height: 44px;
+      height: 48px;
       cursor: pointer; }
 
 /* =============
@@ -495,8 +496,7 @@ footer {
     #hero {
       background-position: 0 top;
       background-size: auto 150%;
-      height: 80vh;
-      width: 100vw; } }
+      height: 80vh; } }
   @media (min-width: 1400px) {
     #hero {
       background-position: center top;
@@ -570,7 +570,7 @@ footer {
         grid-template-areas: "first-figure first-article ."; } }
     @media (min-width: 1400px) {
       #first > div {
-        grid-template-columns: auto 1024px auto;
+        grid-template-columns: 30vw 800px auto;
         grid-template-areas: "first-figure first-article ."; } }
     #first > div article {
       grid-area: first-article;
@@ -587,7 +587,7 @@ footer {
           padding-left: 24px; } }
       @media (min-width: 1400px) {
         #first > div article {
-          padding-left: 10%;
+          padding-left: 10vw;
           grid-template-columns: 600px; } }
       #first > div article h3 {
         grid-area: first-article-h3; }
@@ -709,8 +709,7 @@ footer {
     #famous > div .topImg {
       background-position: 20% top;
       background-size: 2000px auto;
-      height: 200px;
-      width: 100vw; } }
+      height: 200px; } }
   @media (min-width: 1024px) {
     #famous > div .topImg {
       background-position: 20% top;
@@ -834,8 +833,7 @@ footer {
     #famous > div .bottomImg {
       background-position: 85% bottom;
       background-size: 2000px auto;
-      height: 200px;
-      width: 100vw; } }
+      height: 200px; } }
   @media (min-width: 1400px) {
     #famous > div .bottomImg {
       background-position: 85% bottom;
