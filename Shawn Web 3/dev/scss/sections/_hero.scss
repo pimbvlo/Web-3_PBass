@@ -14,7 +14,7 @@
     @include lg {
         background-position: 0 top;
         background-size: auto 150%;
-        height: 80vh;
+        // height: 80vh;
         // width: 100vw;
     }
     @include xl {
@@ -28,7 +28,7 @@
         grid-template-areas: ". hero-content .";
         grid-template-columns: 16px auto 16px;
         @include md {
-            grid-template-columns: 300px auto 32px;
+            grid-template-columns: 120px auto 320px;
         }
         @include lg {
             grid-template-columns: auto 960px auto;
@@ -39,12 +39,12 @@
 
         article {
             grid-area: hero-content;
-            margin-top: rem-calc(56px);
+            margin-top: rem-calc(264px);
             @include md {
                 margin-top: rem-calc(104px);
             }
             @include lg {
-                margin-top: rem-calc(176px);
+                margin-top: rem-calc(120px);
             }
 
             h1 {
@@ -59,8 +59,8 @@
                     width: rem-calc(560px);
                 }
                 @include xl {
-                    font-size: rem-calc(96px);
-                    line-height: rem-calc(96px);
+                    font-size: rem-calc(88px);
+                    line-height: rem-calc(88px);
                 }
             }
 
@@ -68,7 +68,7 @@
                 color: $orange;
                 font-size: rem-calc(40px);
                 line-height: rem-calc(40px);
-                margin-top: rem-calc(160px);
+                margin-top: rem-calc(40px);
                 @include md {
                     margin-top: rem-calc(120px);
                 }

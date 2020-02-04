@@ -6,7 +6,7 @@ lineToX.to("#burger-container",{duration:burgerSpeed, rotate:-90},"create-x")
 // .from("#burger-outline",{duration:0.5, alpha:0},"create-x");
 
 var staggerNav = gsap.timeline({paused:true});
-staggerNav.to("#nav-bg", {duration: burgerSpeed+(burgerSpeed/2), scale: 50, alpha: 0.9})
+staggerNav.to("#nav-bg", {duration: burgerSpeed+(burgerSpeed/3), scale: 45, alpha: 0.98})
 .to("li", {duration:burgerSpeed/4, stagger:0.15, alpha:1, y: 10}, "-=0.15");
 
 
