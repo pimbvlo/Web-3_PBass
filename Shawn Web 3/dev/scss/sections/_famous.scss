@@ -37,7 +37,9 @@
         article {
             background-color: $light-orange;
             display: grid;
-            grid-template-areas: ". famous-h3 ." ". famous-ul .";
+            grid-template-areas: 
+            ". famous-h3 ."
+            ". famous-ul .";
             grid-template-columns: 16px auto 16px;
             padding: 72px 0;
             @include lg {
