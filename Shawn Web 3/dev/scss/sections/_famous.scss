@@ -7,7 +7,7 @@
     https://github.com/iamvdo/css-houdini.rocks
     http://iamvdo.me/en/blog/smooth-corners-with-css-houdini
 ============= */
-#famous {
+#section-2 {
     > div {
         .topImg {
             background-image: url("../img/FamousPlayers/TopBG.svg");
@@ -37,7 +37,7 @@
         article {
             background-color: $light-orange;
             display: grid;
-            grid-template-areas: 
+            grid-template-areas:
             ". famous-h3 ."
             ". famous-ul .";
             grid-template-columns: 16px auto 16px;

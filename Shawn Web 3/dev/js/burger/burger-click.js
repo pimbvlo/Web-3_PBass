@@ -6,8 +6,9 @@ lineToX.to("#burger-container",{duration:burgerSpeed, rotate:-90},"create-x")
 // .from("#burger-outline",{duration:0.5, alpha:0},"create-x");
 
 var staggerNav = gsap.timeline({paused:true});
-staggerNav.to("#nav-bg", {duration: burgerSpeed+(burgerSpeed/8), scale: 45, alpha: 0.98})
-.to("li", {duration:burgerSpeed/4, stagger:0.1, alpha:1, y: 10}, "-=0.15");
+staggerNav.to("#nav-bg", {duration: burgerSpeed+(burgerSpeed/8), scale: 35, alpha: 0.98}, "NavBG")
+.from("#nav-bg svg path", {duration: burgerSpeed+(burgerSpeed/8), fill:"#FF5D00"}, "NavBG")
+.to("nav ul li", {duration:burgerSpeed/4, stagger:0.1, alpha:1, y: 10}, "-=0.15");
 
 
 $("#burger-container").on("click", function(){
@@ -19,12 +20,16 @@ $("#burger-container").on("click", function(){
 
         lineToX.play();
         staggerNav.play();
+
+        gsap.to(window, {duration: 1, scrollTo:{y:contentSections[$('nav ul li').index(this)], offsetY:60}});
+
         canYouSeeNav = true;
     }else{
         gsap.to("#burger-outline",{duration:burgerSpeed, alpha:0});
 
-        staggerNav.reverse();
         lineToX.reverse();
+        staggerNav.reverse();
+
         canYouSeeNav = false;
     }
 });

@@ -398,7 +398,7 @@ textarea {
   height: 50px;
   width: 50px;
   top: 10px;
-  right: 10px;
+  right: 16px;
   z-index: 150; }
   #nav-bg svg {
     transform: rotate(45deg); }
@@ -561,7 +561,7 @@ footer {
           margin-top: 6.5rem; } }
       @media (min-width: 1024px) {
         #hero > div article {
-          margin-top: 7.5rem; } }
+          margin-top: 12.25rem; } }
       #hero > div article h1 {
         color: #FCFCFC;
         font-size: 2.5rem;
@@ -593,46 +593,46 @@ footer {
 /* =============
     firstPrecision
 ============= */
-#first {
+#section-1 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas: "first-content"; }
-  #first > div {
+  #section-1 > div {
     display: grid;
     grid-area: first-content;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "first-article" "first-figure"; }
     @media (min-width: 1024px) {
-      #first > div {
+      #section-1 > div {
         grid-template-columns: 600px auto 24px;
         grid-template-areas: "first-figure first-article ."; } }
     @media (min-width: 1400px) {
-      #first > div {
+      #section-1 > div {
         grid-template-columns: 30vw 800px auto;
         grid-template-areas: "first-figure first-article ."; } }
-    #first > div article {
+    #section-1 > div article {
       grid-area: first-article;
       display: grid;
       grid-template-columns: 16px auto 16px;
       grid-template-areas: ". first-article-h3 ." ". first-article-p ."; }
       @media (min-width: 768px) {
-        #first > div article {
+        #section-1 > div article {
           grid-template-columns: 288px auto 112px; } }
       @media (min-width: 1024px) {
-        #first > div article {
+        #section-1 > div article {
           grid-template-columns: repeat(1, 1fr);
           grid-template-areas: "first-article-h3" "first-article-p";
           padding-left: 24px; } }
       @media (min-width: 1400px) {
-        #first > div article {
+        #section-1 > div article {
           padding-left: 10vw;
           grid-template-columns: 600px; } }
-      #first > div article h3 {
+      #section-1 > div article h3 {
         grid-area: first-article-h3; }
-      #first > div article p {
+      #section-1 > div article p {
         grid-area: first-article-p;
         padding-bottom: 1.5rem; }
-    #first > div figure {
+    #section-1 > div figure {
       background-image: url("../img/FirstPrecision/PrecisionHeadstock.png");
       background-repeat: no-repeat;
       background-position: left center;
@@ -644,47 +644,47 @@ footer {
       justify-content: flex-start;
       align-self: center; }
       @media (min-width: 768px) {
-        #first > div figure {
+        #section-1 > div figure {
           width: 90vw;
           height: 20rem; } }
       @media (min-width: 1024px) {
-        #first > div figure {
+        #section-1 > div figure {
           width: 100%;
           height: 15rem; } }
       @media (min-width: 1400px) {
-        #first > div figure {
+        #section-1 > div figure {
           height: 18.75rem; } }
 
 /* =============
     gallery
 ============= */
-#gallery {
+#section-3 {
   display: grid;
   grid-template-areas: "gallery-content";
   grid-template-columns: repeat(1, 1fr); }
   @media (min-width: 1024px) {
-    #gallery {
+    #section-3 {
       grid-template-columns: auto 1024px auto;
       grid-template-areas: ". gallery-content ."; } }
-  #gallery > div {
+  #section-3 > div {
     grid-area: gallery-content; }
-    #gallery > div article ul {
+    #section-3 > div article ul {
       display: grid;
       grid-template-areas: "gallery-concert" "gallery-closeUp" "gallery-bass";
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: 256px 408px 408px;
       grid-gap: 1.5rem; }
       @media (min-width: 768px) {
-        #gallery > div article ul {
+        #section-3 > div article ul {
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: 400px 296px;
           grid-template-areas: "gallery-bass gallery-bass gallery-closeUp" "gallery-concert gallery-concert gallery-concert"; } }
       @media (min-width: 1024px) {
-        #gallery > div article ul {
+        #section-3 > div article ul {
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: 296px 296px;
           grid-template-areas: "gallery-bass gallery-concert gallery-concert" "gallery-bass gallery-closeUp gallery-closeUp"; } }
-      #gallery > div article ul li:nth-child(1) {
+      #section-3 > div article ul li:nth-child(1) {
         background-image: url("../img/Gallery/frankie-cordoba-uYOva3cQh8c-unsplash.jpg");
         background-position: center top;
         background-repeat: no-repeat;
@@ -692,10 +692,10 @@ footer {
         grid-area: gallery-concert;
         width: 100%; }
         @media (min-width: 768px) {
-          #gallery > div article ul li:nth-child(1) {
+          #section-3 > div article ul li:nth-child(1) {
             background-position: center 30%;
             background-size: cover; } }
-      #gallery > div article ul li:nth-child(2) {
+      #section-3 > div article ul li:nth-child(2) {
         background-image: url("../img/Gallery/felipe-portella-h6gTtqBZUxc-unsplash.jpg");
         background-position: center top;
         background-repeat: no-repeat;
@@ -703,10 +703,10 @@ footer {
         grid-area: gallery-closeUp;
         width: 100%; }
         @media (min-width: 1024px) {
-          #gallery > div article ul li:nth-child(2) {
+          #section-3 > div article ul li:nth-child(2) {
             background-position: center 30%;
             background-size: cover; } }
-      #gallery > div article ul li:nth-child(3) {
+      #section-3 > div article ul li:nth-child(3) {
         background-image: url("../img/Gallery/kari-shea-laHwVPkMTzY-unsplash.jpg");
         background-position: center top;
         background-repeat: no-repeat;
@@ -714,11 +714,11 @@ footer {
         grid-area: gallery-bass;
         width: 100%; }
         @media (min-width: 768px) {
-          #gallery > div article ul li:nth-child(3) {
+          #section-3 > div article ul li:nth-child(3) {
             background-size: 170% auto;
             background-position: left 20%; } }
         @media (min-width: 1024px) {
-          #gallery > div article ul li:nth-child(3) {
+          #section-3 > div article ul li:nth-child(3) {
             background-position: 0 30%;
             background-size: 210% auto; } }
 
@@ -731,7 +731,7 @@ footer {
     https://github.com/iamvdo/css-houdini.rocks
     http://iamvdo.me/en/blog/smooth-corners-with-css-houdini
 ============= */
-#famous > div .topImg {
+#section-2 > div .topImg {
   background-image: url("../img/FamousPlayers/TopBG.svg");
   background-position: 30% top;
   background-repeat: no-repeat;
@@ -739,38 +739,38 @@ footer {
   height: 36px;
   width: 100%; }
   @media (min-width: 768px) {
-    #famous > div .topImg {
+    #section-2 > div .topImg {
       background-position: 20% top;
       background-size: 140% auto;
       height: 72px; } }
   @media (min-width: 1024px) {
-    #famous > div .topImg {
+    #section-2 > div .topImg {
       background-position: 20% top;
       background-size: 2000px auto;
       height: 200px; } }
   @media (min-width: 1024px) {
-    #famous > div .topImg {
+    #section-2 > div .topImg {
       background-position: 20% top;
       background-size: 5000px auto;
       height: 320px; } }
 
-#famous > div article {
+#section-2 > div article {
   background-color: #FFF5F0;
   display: grid;
   grid-template-areas: ". famous-h3 ." ". famous-ul .";
   grid-template-columns: 16px auto 16px;
   padding: 72px 0; }
   @media (min-width: 1024px) {
-    #famous > div article {
+    #section-2 > div article {
       grid-template-columns: auto 960px auto;
       padding: 0; } }
   @media (min-width: 1400px) {
-    #famous > div article {
+    #section-2 > div article {
       grid-template-columns: auto 1024px auto;
       padding: 104px 0; } }
-  #famous > div article h3 {
+  #section-2 > div article h3 {
     grid-area: famous-h3; }
-  #famous > div article ul {
+  #section-2 > div article ul {
     display: grid;
     grid-area: famous-ul;
     grid-gap: 16px;
@@ -778,84 +778,84 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 16px; }
     @media (min-width: 768px) {
-      #famous > div article ul {
+      #section-2 > div article ul {
         grid-template-areas: "famous-Simonon famous-Mendel famous-Kaye" "famous-Entwistle famous-McKagan famous-Ramone";
         grid-template-columns: repeat(3, 1fr); } }
     @media (min-width: 1024px) {
-      #famous > div article ul {
+      #section-2 > div article ul {
         grid-gap: 24px;
         grid-template-areas: "famous-Simonon famous-Mendel famous-Kaye" "famous-Ramone famous-McKagan famous-Entwistle";
         grid-template-columns: repeat(3, 1fr); } }
-  #famous > div article li:nth-child(1) {
+  #section-2 > div article li:nth-child(1) {
     grid-area: famous-Simonon; }
-    #famous > div article li:nth-child(1) > figure {
+    #section-2 > div article li:nth-child(1) > figure {
       background-image: url("../img/FamousPlayers/Simonon.jpg");
       background-position: center top;
       background-repeat: no-repeat;
       background-size: cover; }
-  #famous > div article li:nth-child(2) {
+  #section-2 > div article li:nth-child(2) {
     grid-area: famous-Mendel; }
-    #famous > div article li:nth-child(2) > figure {
+    #section-2 > div article li:nth-child(2) > figure {
       background-image: url("../img/FamousPlayers/Mendel.jpg");
       background-position: center top;
       background-repeat: no-repeat;
       background-size: cover; }
-  #famous > div article li:nth-child(3) {
+  #section-2 > div article li:nth-child(3) {
     display: none;
     grid-area: famous-Kaye; }
     @media (min-width: 768px) {
-      #famous > div article li:nth-child(3) {
+      #section-2 > div article li:nth-child(3) {
         display: initial; } }
-    #famous > div article li:nth-child(3) > figure {
+    #section-2 > div article li:nth-child(3) > figure {
       background-image: url("../img/FamousPlayers/Kaye.jpg");
       background-position: center top;
       background-repeat: no-repeat;
       background-size: cover; }
       @media (min-width: 1024px) {
-        #famous > div article li:nth-child(3) > figure {
+        #section-2 > div article li:nth-child(3) > figure {
           background-position: center 30%;
           background-repeat: no-repeat;
           background-size: cover; } }
-  #famous > div article li:nth-child(4) {
+  #section-2 > div article li:nth-child(4) {
     display: none;
     grid-area: famous-Entwistle; }
     @media (min-width: 768px) {
-      #famous > div article li:nth-child(4) {
+      #section-2 > div article li:nth-child(4) {
         display: initial; } }
-    #famous > div article li:nth-child(4) > figure {
+    #section-2 > div article li:nth-child(4) > figure {
       background-image: url("../img/FamousPlayers/Entwistle.jpg");
       background-position: center top;
       background-repeat: no-repeat;
       background-size: cover; }
-  #famous > div article li:nth-child(5) {
+  #section-2 > div article li:nth-child(5) {
     display: none;
     grid-area: famous-McKagan; }
     @media (min-width: 768px) {
-      #famous > div article li:nth-child(5) {
+      #section-2 > div article li:nth-child(5) {
         display: initial; } }
-    #famous > div article li:nth-child(5) > figure {
+    #section-2 > div article li:nth-child(5) > figure {
       background-image: url("../img/FamousPlayers/McKagan.jpg");
       background-position: center top;
       background-repeat: no-repeat;
       background-size: cover; }
       @media (min-width: 1024px) {
-        #famous > div article li:nth-child(5) > figure {
+        #section-2 > div article li:nth-child(5) > figure {
           background-position: center 0;
           background-repeat: no-repeat;
           background-size: 110% auto; } }
-  #famous > div article li:nth-child(6) {
+  #section-2 > div article li:nth-child(6) {
     display: none;
     grid-area: famous-Ramone; }
     @media (min-width: 768px) {
-      #famous > div article li:nth-child(6) {
+      #section-2 > div article li:nth-child(6) {
         display: initial; } }
-    #famous > div article li:nth-child(6) > figure {
+    #section-2 > div article li:nth-child(6) > figure {
       background-image: url("../img/FamousPlayers/Ramone.jpg");
       background-position: center bottom;
       background-repeat: no-repeat;
       background-size: cover; }
 
-#famous > div .bottomImg {
+#section-2 > div .bottomImg {
   background-image: url("../img/FamousPlayers/BottomBG.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -863,17 +863,17 @@ footer {
   height: 36px;
   width: 100%; }
   @media (min-width: 768px) {
-    #famous > div .bottomImg {
+    #section-2 > div .bottomImg {
       background-position: 10% bottom;
       background-size: 120% auto;
       height: 72px; } }
   @media (min-width: 1024px) {
-    #famous > div .bottomImg {
+    #section-2 > div .bottomImg {
       background-position: 85% bottom;
       background-size: 2000px auto;
       height: 200px; } }
   @media (min-width: 1400px) {
-    #famous > div .bottomImg {
+    #section-2 > div .bottomImg {
       background-position: 85% bottom;
       background-size: 5000px auto;
       height: 364px; } }
@@ -881,7 +881,7 @@ footer {
 /* =============
     patentSketch
 ============= */
-#patentSketch figure {
+#section-4 figure {
   background-image: url("../img/Sketch/TopBG.svg");
   background-position: 60% top;
   background-repeat: no-repeat;
@@ -889,35 +889,35 @@ footer {
   height: 48px;
   width: 100%; }
   @media (min-width: 768px) {
-    #patentSketch figure {
+    #section-4 figure {
       height: 112px;
       background-size: 130% auto;
       background-position: 40% top; } }
   @media (min-width: 1024px) {
-    #patentSketch figure {
+    #section-4 figure {
       height: 152px;
       background-size: 130% auto;
       background-position: 40% top; } }
   @media (min-width: 1400px) {
-    #patentSketch figure {
+    #section-4 figure {
       height: 364px; } }
 
-#patentSketch > div {
+#section-4 > div {
   background-color: #211712;
   height: 904px;
   padding-top: 36px; }
   @media (min-width: 768px) {
-    #patentSketch > div {
+    #section-4 > div {
       padding-top: 72px; } }
   @media (min-width: 1024px) {
-    #patentSketch > div {
+    #section-4 > div {
       padding-top: 96px;
       height: 632px;
       display: grid;
       grid-template-areas: ". patent-article ." ". patent-list .";
       grid-template-columns: auto 1024px auto;
       grid-template-rows: 35% auto; } }
-  #patentSketch > div article {
+  #section-4 > div article {
     grid-area: patent-article;
     color: #FFF;
     text-align: justify;
@@ -925,17 +925,17 @@ footer {
     grid-template-areas: ". patent-content .";
     grid-template-columns: 16px auto 16px; }
     @media (min-width: 768px) {
-      #patentSketch > div article {
+      #section-4 > div article {
         grid-template-columns: 112px 400px auto; } }
     @media (min-width: 1024px) {
-      #patentSketch > div article {
+      #section-4 > div article {
         grid-template-columns: 5% 464px auto; } }
-    #patentSketch > div article > div {
+    #section-4 > div article > div {
       grid-area: patent-content; }
-  #patentSketch > div ul {
+  #section-4 > div ul {
     grid-area: patent-list;
     position: relative; }
-    #patentSketch > div ul li:nth-child(1) {
+    #section-4 > div ul li:nth-child(1) {
       background-image: url("../img/Sketch/Fig1.png");
       background-position: center;
       background-repeat: no-repeat;
@@ -947,19 +947,19 @@ footer {
       transform: rotate(-90deg);
       width: 450px; }
       @media (min-width: 768px) {
-        #patentSketch > div ul li:nth-child(1) {
+        #section-4 > div ul li:nth-child(1) {
           transform: rotate(0deg);
           left: 112px;
           top: 350px;
           height: 170px;
           width: 600px; } }
       @media (min-width: 1024px) {
-        #patentSketch > div ul li:nth-child(1) {
+        #section-4 > div ul li:nth-child(1) {
           left: 80px;
           top: 120px;
           height: 172px;
           width: 600px; } }
-    #patentSketch > div ul li:nth-child(2) {
+    #section-4 > div ul li:nth-child(2) {
       background-image: url("../img/Sketch/Fig2.png");
       background-position: center;
       background-repeat: no-repeat;
@@ -970,18 +970,18 @@ footer {
       top: 100px;
       width: 36px; }
       @media (min-width: 768px) {
-        #patentSketch > div ul li:nth-child(2) {
+        #section-4 > div ul li:nth-child(2) {
           left: 600px;
           top: -100px;
           height: 425px;
           width: 30px; } }
       @media (min-width: 1024px) {
-        #patentSketch > div ul li:nth-child(2) {
+        #section-4 > div ul li:nth-child(2) {
           left: 850px;
           top: -250px;
           height: 520px;
           width: 40px; } }
-    #patentSketch > div ul li:nth-child(3) {
+    #section-4 > div ul li:nth-child(3) {
       background-image: url("../img/Sketch/Fig4White.png");
       background-position: center;
       background-repeat: no-repeat;
@@ -991,11 +991,11 @@ footer {
       position: absolute;
       width: 260px; }
       @media (min-width: 768px) {
-        #patentSketch > div ul li:nth-child(3) {
+        #section-4 > div ul li:nth-child(3) {
           display: initial;
           left: 112px;
           top: 200px; } }
       @media (min-width: 1024px) {
-        #patentSketch > div ul li:nth-child(3) {
+        #section-4 > div ul li:nth-child(3) {
           left: 480px;
           top: 30px; } }
