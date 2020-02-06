@@ -2,8 +2,9 @@ var burgerSpeed = 0.25;
 
 
 var canYouSeeNav = false;
+
 gsap.set("#nav-bg", {transformOrigin:"50% 50%"});
-gsap.set("#nav-bg svg path", {fill: "#211712"});
+gsap.set("#nav-bg svg path", {fill: "#FCFCFC", alpha: 0.5});
 gsap.set("nav ul li", {alpha: 0});
 
 // hide outline

@@ -3,32 +3,60 @@
 ============= */
 nav {
     position: fixed;
-    z-index: 300;
+    right: 24px;
     top: 15%;
-    right: 30px;
+    width: 80vw;
+    z-index: 300;
+    @include md{
+        width: 40vw;
+    }
+    @include lg{
+        width: 30vw;
+    }
 
     ul {
         li {
-            text-align: right;
-            margin-bottom: 32px;
+            display: none;
+
+            // border: 1px blue solid;
+            @include md {
+            }
             @include lg {
-                margin-bottom: 48px;
             }
 
-            a:link,
-            a:visited {
+            button {
+                background-color: $blank;
+                border: none;
                 color: $off-white;
+                cursor: pointer;
+                font-size: rem-calc(28);
+                // height: 100%;
+                padding: 10px 0px;
+                text-align: right;
                 text-decoration: none;
-                font-size: rem-calc(32);
+                transition: 0.25s;
+                width: 100%;
+                margin-bottom: 16px;
+
                 @include md {
+                    font-size: rem-calc(32);
+                    margin-bottom: 24px;
+
+                }
+                @include lg {
                     font-size: rem-calc(40);
+                    margin-bottom: 32px;
+
                 }
             }
 
-            a:active,
-            a:hover {
+            button:hover {
                 color: $brown;
             }
+        }
+        li:nth-last-child(1) {
+            margin-bottom: 0px;
+
         }
     }
 }

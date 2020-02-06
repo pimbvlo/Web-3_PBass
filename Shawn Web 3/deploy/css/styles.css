@@ -408,27 +408,42 @@ textarea {
 ============= */
 nav {
   position: fixed;
-  z-index: 300;
+  right: 24px;
   top: 15%;
-  right: 30px; }
+  width: 80vw;
+  z-index: 300; }
+  @media (min-width: 768px) {
+    nav {
+      width: 40vw; } }
+  @media (min-width: 1024px) {
+    nav {
+      width: 30vw; } }
   nav ul li {
-    text-align: right;
-    margin-bottom: 32px; }
-    @media (min-width: 1024px) {
-      nav ul li {
-        margin-bottom: 48px; } }
-    nav ul li a:link,
-    nav ul li a:visited {
+    display: none; }
+    nav ul li button {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
       color: #FCFCFC;
+      cursor: pointer;
+      font-size: 1.75rem;
+      padding: 10px 0px;
+      text-align: right;
       text-decoration: none;
-      font-size: 2rem; }
+      transition: 0.25s;
+      width: 100%;
+      margin-bottom: 16px; }
       @media (min-width: 768px) {
-        nav ul li a:link,
-        nav ul li a:visited {
-          font-size: 2.5rem; } }
-    nav ul li a:active,
-    nav ul li a:hover {
+        nav ul li button {
+          font-size: 2rem;
+          margin-bottom: 24px; } }
+      @media (min-width: 1024px) {
+        nav ul li button {
+          font-size: 2.5rem;
+          margin-bottom: 32px; } }
+    nav ul li button:hover {
       color: #211712; }
+  nav ul li:nth-last-child(1) {
+    margin-bottom: 0px; }
 
 /* =============
     Cards
@@ -521,72 +536,72 @@ footer {
 /* =============
     hero
 ============= */
-#hero {
+#hero-1 {
   background-image: url("../img/Hero/getulio-moraes-0crScaMEJj4-unsplash.jpg");
   background-position: 55% top;
   background-repeat: no-repeat;
   background-size: auto 140%;
   height: 80vh; }
   @media (min-width: 768px) {
-    #hero {
+    #hero-1 {
       background-position: 70% top;
       background-size: auto 140%; } }
   @media (min-width: 1024px) {
-    #hero {
+    #hero-1 {
       background-position: 0 top;
       background-size: auto 150%; } }
   @media (min-width: 1400px) {
-    #hero {
+    #hero-1 {
       background-position: center top;
       background-size: cover;
       height: 100vh; } }
-  #hero > div {
+  #hero-1 > div {
     display: grid;
     grid-template-areas: ". hero-content .";
     grid-template-columns: 16px auto 16px; }
     @media (min-width: 768px) {
-      #hero > div {
+      #hero-1 > div {
         grid-template-columns: 120px auto 320px; } }
     @media (min-width: 1024px) {
-      #hero > div {
+      #hero-1 > div {
         grid-template-columns: auto 960px auto; } }
     @media (min-width: 1400px) {
-      #hero > div {
+      #hero-1 > div {
         grid-template-columns: auto 1200px auto; } }
-    #hero > div article {
+    #hero-1 > div article {
       grid-area: hero-content;
       margin-top: 16.5rem; }
       @media (min-width: 768px) {
-        #hero > div article {
+        #hero-1 > div article {
           margin-top: 6.5rem; } }
       @media (min-width: 1024px) {
-        #hero > div article {
+        #hero-1 > div article {
           margin-top: 12.25rem; } }
-      #hero > div article h1 {
+      #hero-1 > div article h1 {
         color: #FCFCFC;
         font-size: 2.5rem;
         line-height: 2.5rem; }
         @media (min-width: 768px) {
-          #hero > div article h1 {
+          #hero-1 > div article h1 {
             font-size: 3.5rem;
             line-height: 3.5rem; } }
         @media (min-width: 1024px) {
-          #hero > div article h1 {
+          #hero-1 > div article h1 {
             width: 35rem; } }
         @media (min-width: 1400px) {
-          #hero > div article h1 {
+          #hero-1 > div article h1 {
             font-size: 5.5rem;
             line-height: 5.5rem; } }
-      #hero > div article h2 {
+      #hero-1 > div article h2 {
         color: #FF5D00;
         font-size: 2.5rem;
         line-height: 2.5rem;
         margin-top: 2.5rem; }
         @media (min-width: 768px) {
-          #hero > div article h2 {
+          #hero-1 > div article h2 {
             margin-top: 7.5rem; } }
         @media (min-width: 1400px) {
-          #hero > div article h2 {
+          #hero-1 > div article h2 {
             font-size: 3.5rem;
             line-height: 3.5rem; } }
 
