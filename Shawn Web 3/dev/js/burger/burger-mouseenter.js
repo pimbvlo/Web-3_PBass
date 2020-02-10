@@ -1,7 +1,7 @@
 
 // timeline for the burger lines to become 1 line
-var lineToLine = gsap.timeline({paused:true});
-lineToLine.to("#top-line",{duration:burgerSpeed, y:8},"move-lines")
+var linesToLine = gsap.timeline({paused:true});
+linesToLine.to("#top-line",{duration:burgerSpeed, y:8},"move-lines")
 .to("#bottom-line",{duration:burgerSpeed, y:-8},"move-lines");
 
 
@@ -12,12 +12,12 @@ $("#burger-container").on("mouseenter", function(){
         console.log("is open false mouseEnter");
 
         // play the timeline to combine the lines into 1 line
-        lineToLine.invalidate().restart();
-        lineToLine.play();
+        linesToLine.invalidate().restart();
+        linesToLine.play();
     }else{
         console.log("is open true");
-        lineToLine.invalidate().restart();
-        lineToLine.play();
+        linesToLine.invalidate().restart();
+        linesToLine.play();
     }
 
 });

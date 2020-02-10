@@ -662,6 +662,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/waypoints.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/waypoints-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/nav-background.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -919,6 +930,28 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		}
 	},
 "hooks": [
@@ -2411,7 +2444,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "gsap, ScrollToPlugin",
+	"jsCheckerReservedNamesString": "gsap, ScrollToPlugin, Waypoint, inview, notify",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
